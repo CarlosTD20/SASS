@@ -1,0 +1,57 @@
+$index:0;
+@each $padding in $paddings {
+  .g--padding-#{$index}{
+    padding: $padding;
+  }
+  $index:$index+1;
+}
+
+$index:0;
+@each $padding in $paddings {
+  .g--padding-vertical-#{$index}{
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+  $index:$index+1;
+}
+
+$index:0;
+@each $padding in $paddings {
+  .g--padding-horizontal-#{$index}{
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+  $index:$index+1;
+}
+
+$index:0;
+@each $padding in $paddings {
+  .g--padding-left-#{$index}{
+    padding-left: $padding;
+  }
+  $index:$index+1;
+}
+
+$index:0;
+@each $padding in $paddings {
+  .g--padding-right-#{$index}{
+    padding-right: $padding;
+  }
+  $index:$index+1;
+}
+
+$index:0;
+@each $padding in $paddings {
+  .g--padding-top-#{$index}{
+    padding-top: $padding;
+  }
+  $index:$index+1;
+}
+
+$index:0;
+@each $padding in $paddings {
+  .g--padding-bottom-#{$index}{
+    padding-bottom: $padding;
+  }
+  $index:$index+1;
+}

@@ -1,0 +1,15 @@
+@each $colors, $valueColors in $colorsMedia{
+    .g--color-#{$colors}{
+        color: $valueColors;
+    }
+}
+
+@each $breakpoint , $valueBreakpoint in $breakpoints{
+    @media (min-width: $valueBreakpoint){
+        @each $colors, $valueColors in $colorsMedia{
+            .g--color-#{$colors}\@#{$valueBreakpoint}{
+                color: $valueColors;
+            }
+        }
+    }
+}

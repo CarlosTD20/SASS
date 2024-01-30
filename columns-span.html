@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .l-columns {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        .l-columns--4{
+            grid-template-columns: repeat(4, 1fr);
+            border: 1px solid green;
+        } 
+
+        .l-columns--5{
+            grid-template-columns: repeat(5, 1fr);
+            border: 1px solid green;
+        } 
+
+        .l-columns--6{
+            grid-template-columns: repeat(6, 1fr);
+            border: 1px solid green;
+        }  
+        
+        .l-columns__area {
+            border: 1px solid green;
+        }
+        .l-columns__area--span-2 {
+            grid-column: span 2;
+            
+        }
+        .l-columns__area--span-3 {
+            grid-column: span 3;
+            
+        }
+        .l-columns__area--span-4 {
+            grid-column: span 4;
+            
+        }
+        @media (min-width: 576px) {
+            .l-columns--2\@tablet{
+                grid-template-columns: repeat(2, 1fr);
+                border: 1px solid green;
+            } 
+            .l-columns--3\@tablet{
+                grid-template-columns: repeat(3, 1fr);
+                border: 1px solid green;
+            } 
+            .l-columns--4\@tablet{
+                grid-template-columns: repeat(4, 1fr);
+                border: 1px solid green;
+            } 
+
+            .l-columns--5\@tablet{
+                grid-template-columns: repeat(5, 1fr);
+                border: 1px solid green;
+            } 
+
+            .l-columns--6\@tablet{
+                grid-template-columns: repeat(6, 1fr);
+                border: 1px solid green;
+            }  
+            .l-columns__area--span-1\@tablet {
+                grid-column: span 1;
+                
+            }
+            .l-columns__area--span-2\@tablet {
+                grid-column: span 2;
+                
+            }
+            .l-columns__area--span-3\@tablet {
+                grid-column: span 3;
+                
+            }
+            .l-columns__area--span-4\@tabletp {
+                grid-column: span 4;
+                
+            }
+            .l-columns__area--span-5\@tablet {
+                grid-column: span 5;
+                
+            }
+            .l-columns__area--span-6\@tabletp {
+                grid-column: span 6;
+                
+            }
+        }
+        @media (min-width: 768px) {
+            .l-columns--2\@desktop{
+                grid-template-columns: repeat(2, 1fr);
+                border: 1px solid green;
+            } 
+            .l-columns--3\@desktop{
+                grid-template-columns: repeat(3, 1fr);
+                border: 1px solid green;
+            } 
+            .l-columns--4\@desktop{
+                grid-template-columns: repeat(4, 1fr);
+                border: 1px solid green;
+            } 
+
+            .l-columns--5\@desktop{
+                grid-template-columns: repeat(5, 1fr);
+                border: 1px solid green;
+            } 
+
+            .l-columns--6\@desktop{
+                grid-template-columns: repeat(6, 1fr);
+                border: 1px solid green;
+            }  
+            .l-columns__area--span-1\@desktop {
+                grid-column: span 1;
+                
+            }
+            .l-columns__area--span-2\@desktop {
+                grid-column: span 2;
+                
+            }
+            .l-columns__area--span-3\@desktop {
+                grid-column: span 3;
+                
+            }
+            .l-columns__area--span-4\@desktop {
+                grid-column: span 4;
+                
+            }
+            .l-columns__area--span-5\@desktop {
+                grid-column: span 5;
+                
+            }
+            .l-columns__area--span-6\@desktop {
+                grid-column: span 6;
+                
+            }
+        }
+        @media (min-width: 992px) {
+            .l-columns--2\@fulldesktop{
+                grid-template-columns: repeat(2, 1fr);
+                border: 1px solid green;
+            } 
+            .l-columns--3\@fulldesktop{
+                grid-template-columns: repeat(3, 1fr);
+                border: 1px solid green;
+            } 
+            .l-columns--4\@fulldesktop{
+                grid-template-columns: repeat(4, 1fr);
+                border: 1px solid green;
+            } 
+
+            .l-columns--5\@fulldesktop{
+                grid-template-columns: repeat(5, 1fr);
+                border: 1px solid green;
+            } 
+
+            .l-columns--6\@fulldesktop{
+                grid-template-columns: repeat(6, 1fr);
+                border: 1px solid green;
+            }  
+            .l-columns__area--span-1\@fulldesktop {
+                grid-column: span 1;
+                
+            }
+            .l-columns__area--span-2\@fulldesktop {
+                grid-column: span 2;
+                
+            }
+            .l-columns__area--span-3\@fulldesktop {
+                grid-column: span 3;
+                
+            }
+            .l-columns__area--span-4\@fulldesktop {
+                grid-column: span 4;
+                
+            }
+            .l-columns__area--span-5\@fulldesktop {
+                grid-column: span 5;
+                
+            }
+            .l-columns__area--span-6\@fulldesktop {
+                grid-column: span 6;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="l-columns  l-columns--4 ">
+        <div class="l-columns__area l-columns__area--span-4">Columna</div>
+        <div class="l-columns__area ">Columna</div>
+        <div class="l-columns__area l-columns__area--span-2">Columna</div>
+        <div class="l-columns__area">Columna</div>
+        <div class="l-columns__area l-columns__area--span-2">Columna</div>
+        <div class="l-columns__area ">Columna</div>
+        <div class="l-columns__area ">Columna</div>  
+                         
+      </div>
+
+      <br><br><br>
+
+      <div class="l-columns l-columns--2@tablet l-columns--4@fulldesktop">
+        <div class="l-columns__area">Columna</div>
+        <div class="l-columns__area">Columna</div>
+        <div class="l-columns__area">Columna</div>
+        <div class="l-columns__area">Columna</div>
+        <div class="l-columns__area">Columna</div>
+        <div class="l-columns__area l-columns__area--span-2@fulldesktop">Columna</div>
+        <div class="l-columns__area l-columns__area--span-2@tablet l-columns__area--span-1@fulldesktop">Columna</div>  
+                         
+      </div>
+</body>
+</html>
+<!-- l-columns__area--span-2 -->
