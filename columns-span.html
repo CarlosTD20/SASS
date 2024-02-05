@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 
-    <style>
+     <style>
         body{
             text-align: center;
         }
-        .l-columns {
+        .c-border{
+            border: 1px solid green;
+        }
+        /* .l-columns {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
@@ -140,7 +144,7 @@
                 
             }
         }
-        @media (min-width: 992px) {
+        @media (min-width: 2px) {
             .l-columns--2\@fulldesktop{
                 grid-template-columns: repeat(2, 1fr);
                 border: 1px solid green;
@@ -187,31 +191,31 @@
                 grid-column: span 6;
                 
             }
-        }
-    </style>
+        } */
+    </style> 
 </head>
 <body>
     <div class="l-columns  l-columns--4 ">
-        <div class="l-columns__area l-columns__area--span-4">Columna</div>
-        <div class="l-columns__area ">Columna</div>
-        <div class="l-columns__area l-columns__area--span-2">Columna</div>
-        <div class="l-columns__area">Columna</div>
-        <div class="l-columns__area l-columns__area--span-2">Columna</div>
-        <div class="l-columns__area ">Columna</div>
-        <div class="l-columns__area ">Columna</div>  
+        <div class="c-border l-columns__area l-columns__area--span-4">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area l-columns__area--span-2">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area l-columns__area--span-2">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>  
                          
       </div>
 
       <br><br><br>
 
       <div class="l-columns l-columns--2@tablet l-columns--4@fulldesktop">
-        <div class="l-columns__area">Columna</div>
-        <div class="l-columns__area">Columna</div>
-        <div class="l-columns__area">Columna</div>
-        <div class="l-columns__area">Columna</div>
-        <div class="l-columns__area">Columna</div>
-        <div class="l-columns__area l-columns__area--span-2@fulldesktop">Columna</div>
-        <div class="l-columns__area l-columns__area--span-2@tablet l-columns__area--span-1@fulldesktop">Columna</div>  
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area ">Columna</div>
+        <div class="c-border l-columns__area l-columns__area--span-2@fulldesktop">Columna</div>
+        <div class="c-border l-columns__area l-columns__area--span-2@tablet l-columns__area--span-1@fulldesktop">Columna</div>  
                          
       </div>
 </body>

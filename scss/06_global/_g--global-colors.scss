@@ -35,7 +35,7 @@
       background-color: $colorVariable;
     }
     .g--border-color-#{$variable-text}{
-      border-color: $colorVariable;
+      border-color: $colorVariable 1px solid;
     }
   }
 }
