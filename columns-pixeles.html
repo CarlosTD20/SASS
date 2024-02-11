@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .l-columns {
+            display: grid;
+            grid-template-columns: 100px 200px 80px 300px;
+        }
+
+        .l-columns--2 {
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+        }
+
+        .l-columns--3 {
+            grid-template-columns: 50vw 50vw;
+        }
+
+        .l-columns--4 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .l-columns--5 {
+            grid-template-columns: 1fr 2fr;
+        }
+        .l-columns--6 {
+            grid-template-columns: repeat(2,2fr) repeat(2,1fr);
+        }
+        .l-columns--7 {
+            grid-template-columns: repeat(auto-fit,150px);
+        }
+        .l-columns--8 {
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        }
+
+        .c-border {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body style="border: 0;margin: 0;">
+    <div class="l-columns">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="l-columns l-columns--2">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="l-columns l-columns--3">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="l-columns l-columns--4">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="l-columns l-columns--5">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="l-columns l-columns--6">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="l-columns l-columns--7">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="l-columns l-columns--8">
+        <div class=" c-border">
+            <h2>A</h>
+        </div>
+        <div class="c-border">
+            <h2>B</h2>
+        </div>
+        <div class="c-border">
+            <h2>C</h2>
+        </div>
+        <div class="c-border">
+            <h2>D</h2>
+        </div>
+        <div class="c-border">
+            <h2>E</h2>
+        </div>
+        <div class="c-border">
+            <h2>F</h2>
+        </div>
+        <div class="c-border">
+            <h2>G</h2>
+        </div>
+        <div class="c-border">
+            <h2>H</h2>
+        </div>
+    </div>
+</body>
+
+</html>

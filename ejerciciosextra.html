@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .c-box{
+            width: 100%;
+            height: 300px;
+            background-color: red;
+        }
+        .c-box--blue{
+            background-color: blue;
+        }
+        .c-box--green{
+            background-color: green;
+        }
+
+        .l-columns{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .l-columns--1{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .l-columns--2{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .l-columns--3{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: 600px) {
+            .l-columns--1\@tablet{
+            grid-template-columns: repeat(1, 1fr);
+            }
+            .l-columns--2\@tablet{
+            grid-template-columns: repeat(2, 1fr);
+            }
+            .l-columns--3\@tablet{
+            grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (min-width: 1000px) {
+            .l-columns--1\@desktop{
+            grid-template-columns: repeat(1, 1fr);
+            }
+            .l-columns--2\@desktop{
+            grid-template-columns: repeat(2, 1fr);
+            }
+            .l-columns--3\@desktop{
+            grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="l-columns l-columns--2@tablet l-columns--3@desktop">
+        <div class="c-box"></div>
+        <div class="c-box c-box--blue"></div>
+        <div class="c-box c-box--green"></div>
+    </div>
+</body>
+</html>

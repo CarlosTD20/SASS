@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla con estilos BEM</title>
+<style>
+    /* Modificadores globales */
+    .w-100 { width: 100px; }
+    .w-150 { width: 150px; }
+    .w-200 { width: 200px; }
+    .w-250 { width: 250px; }
+    .w-300 { width: 300px; }
+    .w-350 { width: 350px; }
+    .w-400 { width: 400px; }
+    .w-450 { width: 450px; }
+    .w-500 { width: 500px; }
+    .w-550 { width: 550px; }
+    .w-600 { width: 600px; }
+
+    .minw-100 { min-width: 100px; }
+    .minw-150 { min-width: 150px; }
+    .minw-200 { min-width: 200px; }
+    .minw-250 { min-width: 250px; }
+    .minw-300 { min-width: 300px; }
+    .minw-350 { min-width: 350px; }
+    .minw-400 { min-width: 400px; }
+    .minw-450 { min-width: 450px; }
+    .minw-500 { min-width: 500px; }
+    .minw-550 { min-width: 550px; }
+    .minw-600 { min-width: 600px; }
+
+    .maxw-100 { max-width: 100px; }
+    .maxw-150 { max-width: 150px; }
+    .maxw-200 { max-width: 200px; }
+    .maxw-250 { max-width: 250px; }
+    .maxw-300 { max-width: 300px; }
+    .maxw-350 { max-width: 350px; }
+    .maxw-400 { max-width: 400px; }
+    .maxw-450 { max-width: 450px; }
+    .maxw-500 { max-width: 500px; }
+    .maxw-550 { max-width: 550px; }
+    .maxw-600 { max-width: 600px; }
+
+    .overflow-auto { overflow: auto; }
+
+    /* Estilos para la tabla BEM */
+    .table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .table th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="w-200">Columna Ancho Fijo</th>
+                <th class="minw-100 maxw-300">Columna Ancho Mínimo y Máximo</th>
+                <th class="minw-200">Columna Ancho Mínimo</th>
+                <th class="w-100 overflow-auto">Columna Ancho Fijo con Overflow</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="w-200">Contenido 1</td>
+                <td class="minw-100 maxw-300">Contenido 2</td>
+                <td class="minw-200">Contenido 3</td>
+                <td class="w-100 overflow-auto">Contenido 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ligula vel lacus dapibus ultricies eget a lectus. Vivamus ut velit consequat, rutrum lacus nec, interdum arcu. Sed sed risus vel nunc tristique dictum.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

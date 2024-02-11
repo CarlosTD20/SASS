@@ -1,0 +1,19 @@
+*Ejercicio de Diseño Responsivo 1:*
+Crea una página web que contenga tres columnas con textos descriptivos sobre el padel. 
+Cada columna debe estar representada por un color distinto y debe ajustar su tamaño según el ancho de la pantalla con los siguientes criterios:
+
+- En pantallas menores de 600px, las columnas deben ocupar el 100% del ancho y apilarse verticalmente.
+- Entre 600px y 1200px, deben distribuirse en dos filas, con dos columnas en la primera y una en la segunda.
+- Para pantallas mayores de 1200px, las tres columnas deben distribuirse horizontalmente ocupando partes iguales del ancho de la página.
+
+*Ejercicio de Diseño Responsivo 2:*
+Desarrolla una sección de testimonios para un sitio web de clases de pádel que incluya imágenes y textos. Utiliza media quieres para asegurarte de que en dispositivos móviles, los testimonios se muestren en un carrusel horizontal deslizable, mientras que en dispositivos de escritorio, se presenten en una cuadrícula estática.
+
+*Ejercicio de Animaciones CSS 1:*
+Crea una animación para el logo de una academia de pádel que haga que el logo gire sobre su propio eje y aumente de tamaño cuando el usuario pase el ratón sobre él. La animación debe volver al estado original una vez que el ratón ya no esté encima.
+
+*Ejercicio de Animaciones CSS 2:*
+Diseña una página que incluya un campo de texto que, cuando se enfoque, se ilumine con un borde azul brillante y se expanda ligeramente para indicar que está activo. Al perder el foco, el campo de texto debe volver a su estado original con una transición suave.
+
+*Ejercicio de Diseño Responsivo y Animaciones Combinadas:*
+Construye una landing page para un torneo de pádel que incluya un banner principal que cambie de imagen según el tamaño de la pantalla (móvil, tablet y escritorio). Además, incorpora una cuenta regresiva para el inicio del torneo que se anime y se destaque cuando la página se cargue por primera vez.

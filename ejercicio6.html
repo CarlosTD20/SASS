@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c_cuadrado{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        @media (min-width: 500px) {
+            .g--color-fondo-responsivo{
+            background-color: green;
+            }
+        }
+        @media (min-width: 750px) {
+            .g--color-fondo-responsivo{
+            background-color: blue;
+            }
+        }
+        @media (min-width: 1000px) {
+            .g--color-fondo-responsivo{
+            background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="c_cuadrado g--color-fondo-responsivo"></div>
+</body>
+</html>

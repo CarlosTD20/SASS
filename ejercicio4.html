@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 900px)" src="assets/responsive-large.jpg">
+        <source media="(min-width: 500px)" src="assets/responsive-medium.jpg">
+        <img src="assets/responsive-small.jpg">
+    </picture>
+
+    <picture>
+        <source media="(min-width: 900px)" srcset="https://logongas.es/lib/exe/fetch.php?media=responsive-large.jpg" />
+        <source media="(min-width: 500px)" srcset="https://logongas.es/lib/exe/fetch.php?media=responsive-medium.jpg" />  
+        <img src="https://logongas.es/lib/exe/fetch.php?media=responsive-small.jpg"  />
+      </picture>
+</body>
+</html>
