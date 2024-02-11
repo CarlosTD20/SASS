@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c-animated-box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transition: 3s;
+        }
+        .c-animated-box:hover{
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c-animated-box"></div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation Example</title>
+<style>
+  .square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: width 3s;
+  }
+
+  .square:hover {
+    width: 600px;
+  }
+
+  .text {
+    font-size: 12px;
+    transition: font-size 3s;
+  }
+
+  .enlarge {
+    font-size: 30px;
+  }
+</style>
+</head>
+<body>
+  <div class="square"></div>
+  <p class="text">Texto a modificar</p>
+
+  <script>
+    // JavaScript para cambiar el tamaño del texto
+    setTimeout(function() {
+      document.querySelector('.text').classList.add('enlarge');
+    }, 100); // Se agrega un pequeño retardo para que la transición se vea mejor
+  </script>
+</body>
+</html>
