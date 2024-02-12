@@ -63,32 +63,32 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
-  @each $nameColor, $valueColor in $colors {
-      $index: 0;
+// @media (prefers-color-scheme: light) {
+//   @each $nameColor, $valueColor in $colors {
+//       $index: 0;
 
-      @each $color in $valueColor {
-          $index: $index + 1;
+//       @each $color in $valueColor {
+//           $index: $index + 1;
 
 
-          .g--bg-#{$nameColor}-#{$index}\@light {
-              background-color: var(--color-#{$nameColor}-#{$index});
-          }
+//           .g--bg-#{$nameColor}-#{$index}\@light {
+//               background-color: var(--color-#{$nameColor}-#{$index});
+//           }
 
-          .g--color-#{$nameColor}-#{$index}\@light {
-              color: var(--color-#{$nameColor}-#{$index});
-          }
+//           .g--color-#{$nameColor}-#{$index}\@light {
+//               color: var(--color-#{$nameColor}-#{$index});
+//           }
 
-          .g--bc-#{$nameColor}-#{$index}\@light {
-              border-color: var(--color-#{$nameColor}-#{$index});
-          }
+//           .g--bc-#{$nameColor}-#{$index}\@light {
+//               border-color: var(--color-#{$nameColor}-#{$index});
+//           }
 
-          .g--border-#{$nameColor}-#{$index}\@light {
-              border:1px solid var(--color-#{$nameColor}-#{$index});
-          }
-      }
-  }
-}
+//           .g--border-#{$nameColor}-#{$index}\@light {
+//               border:1px solid var(--color-#{$nameColor}-#{$index});
+//           }
+//       }
+//   }
+// }
 
 //$colors:(
 //        "primary":(#DCEBFE, #BEDBFE, #91C3FD, #61A6FA, #3C83F6, #2463EB, #1D4FD7, #1E3FAE, #1E3B8A),
